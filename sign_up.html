@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Form</title>
+  </head>
+  <body>
+    <h1>Emergency Loan&reg;- Sign Up Form</h1>
+    <form method="post">
+      <label for="firstname">First Name</label>
+      <input type="text" id="firstname" name="firstname" required /><br />
+      <label for="lastname">Last Name</label>
+      <input type="text" id="lastname" name="lastname" required /><br />
+      <label for="telephone">Phone Number</label>
+      <input type="tel" name="telephone" id="telephone" required /><br />
+      <label for="email">E-mail</label>
+      <input type="email" required /><br />
+      <label for="job">Job Title</label>
+      <input type="text" required />
+      <fieldset>
+        <legend>What is your yearly salary?</legend>
+        <input type="radio" id="low" name="wage" value="6000-16000" checked />
+        <label for="low">6000&euro;-16000&euro;</label><br />
+        <input type="radio" id="medium" name="wage" value="16000-22000" />
+        <label for="medium">16000&euro;-22000&euro;</label><br />
+        <input type="radio" id="high" name="wage" value="22000-30000" />
+        <label for="high">22000&euro;-30000&euro;</label><br />
+      </fieldset>
+      <br />
+      <input type="submit" value="Submit form" />
+      <input type="reset" value="Clear All" />
+    </form>
+
+    <p>Return to <a href="/index.html">Home</a> page.</p>
+
+    <footer>Emergency Loan&reg; 2022</footer>
+  </body>
+</html>
