@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
     <title>Emergency Loan&reg;</title>
   </head>
   <body>
@@ -11,7 +12,7 @@
       <h1>Emergency Loan&reg;</h1>
       <p>
         Something unexpected happened and you are in
-        <em>need for cash</em>?<br />
+        <em>need for money</em>?<br />
         Contact us via the form or even become an
         <strong><a href="/sign_up.html">Emergency Loan member</a></strong> for
         immediate access to our funds.
@@ -19,19 +20,27 @@
     </header>
 
     <form method="post">
-      <div>
-        <label for="firstname">First Name</label>
-        <input type="text" id="firstname" name="firstname" required /><br />
-        <label for="lastname">Last Name</label>
-        <input type="text" id="lastname" name="lastname" required /><br />
-        <label for="contact">Contact number</label>
-        <input type="tel" name="contact" id="contact" required />
-      </div>
+      
+      <!-- The info section form -->
+      <fieldset class="info-field">
+        <legend>Fill in your info</legend>
+        <div>
+          <label for="firstname">First Name:</label>
+          <input type="text" id="firstname" name="firstname" required />
+        </div>
+        <div>
+          <label for="lastname">Last Name:</label>
+          <input type="text" id="lastname" name="lastname" required />
+        </div>
+        <div>
+          <label for="contact">Contact number:</label>
+          <input type="tel" name="contact" id="contact" required />
+        </div>
+      </fieldset>
 
-      <br />
-
+      <!-- The message section form -->      
+      <label for="message">My message</label>
       <div>
-        <label for="message">My Message</label><br />
         <textarea
           id="message"
           name="message"
@@ -41,8 +50,10 @@
           required
         ></textarea>
       </div>
-      <input type="submit" value="Submit form" />
-      <input type="reset" value="Clear All" />
+
+      <!-- Submition buttons -->
+      <input class="submition" type="submit" value="Submit form" />
+      <input class="submition" type="reset" value="Clear All" />
     </form>
 
     <p>
